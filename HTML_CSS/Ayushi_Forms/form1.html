@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: white;
+        }
+
+        .form-container {
+            width: 450px;
+            background-color: lightgray;
+            padding: 10px;
+            border: 2px solid black;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 0;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 5px;
+            border: 1px solid black;
+            font-size: 14px;
+        }
+
+        input:not([type="file"]), select, textarea {
+            width: 70%;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        input[type="file"] {
+            border: none;
+            padding: 3px;
+            width: auto;
+}
+
+        textarea {
+            height: 120px;
+        }
+
+        .gender, .hobbies {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn-group {
+            text-align: center;
+            padding: 0px;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+            padding: 5px 10px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Registration form</h2>
+        <table>
+            <tr>
+                <td>Enter your first name</td>
+                <td><input type="text" placeholder="enter your first name"></td>
+            </tr>
+            <tr>
+                <td>Enter your last name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Enter your password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>ReEnter your password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td>Enter your email</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Enter your mobile</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Enter your address</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td>Select your gender</td>
+                <td>
+                    <div class="gender">
+                        <input type="radio" name="gender"> Male
+                        <input type="radio" name="gender"> Female
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Select your hobbies</td>
+                <td>
+                    <div class="hobbies">
+                        <input type="checkbox"> Hobby1
+                        <input type="checkbox"> Hobby2
+                        <input type="checkbox"> Hobby3
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Select your DOB</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Select your Country</td>
+                <td>
+                    <select>
+                        <option>Select your country</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Upload your pic</td>
+                <td><input type="file"></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="btn-group">
+                    <button type="submit">Save My Data</button>
+                    <button type="reset">Reset Data</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
