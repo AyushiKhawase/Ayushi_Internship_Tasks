@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Karla", sans-serif;
+    margin: 0 ;
+}
+
+/* Header-Section */
+.header{
+    padding: 16px 0;
+    background-color: #e3e3e3;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+.nav a:hover{
+    color: #2d2640;
+}
+.btn.button:hover{
+    background-color: #2d2640;
+    color: white;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+   
+}
+
+.logo {
+    font-size: 36px;
+    font-family: "DM Serif Display", serif;
+    color: #2d2640;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav{
+    display: block;
+}
+.nav a {
+    font-size: 20px;
+    margin-left: 32px;
+    color: #6e6b74;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.btn {
+    padding: 12px 18px;
+    color: #6e6b74;
+    border: 1px solid #6e6b74;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*1. Hero-Section */
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+   
+}
+.cont1 {
+    background-color: #2d2640;
+    padding: 60px 0;
+    color: #ffffff;
+    height: 540px;
+    margin: 88px 0;
+    
+}
+.sec{
+    flex: 0 1 45%;
+}
+.line{
+    width: 200px;
+    height: 2px;
+    background-color: #bcb8c4;
+}
+.heading1{
+    font-size: 56px;
+    margin-top: 16px;
+    line-height: 1.1;
+}
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.para1{
+    color: #cbc7d2;
+    margin: 32px 0px ;
+    font-size: 18px;
+}
+.btn1{
+    border-color: #ffffff;
+    color: #ffffff;
+}
+img{
+    width: 100%;
+}
+
+.btn.btn1:hover{
+    background-color:white;
+    color: #2d2640;
+}
+
+
+ /* 2. About-Section */
+.cont2{
+    margin-top: 80px;
+    padding: 80px 0;
+}
+
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.heading2{
+    font-size: 48px;
+    color: #2d2640;
+}
+.para2{
+    font-size: 20px;
+    line-height: 1.6;
+    color: #6e6b74;
+    margin: 32px 0px;
+}
+
+.btn.btn2:hover{
+    background-color: #2d2640;
+    color: white;
+}
+
+
+/* 3. Different-Section */
+
+.cont3{
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 0 32px; */
+    padding: 80px 30px;
+
+}
+
+.heading3{
+    font-size: 48px;
+    color: #2d2640;
+}
+
+.different-content{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    align-items: flex-start;
+    max-width: 1200px;
+    padding-top:40px;
+   padding-right: 40px;
+    
+}
+
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #8ab4f0;
+   
+}
+
+
+.cont3 p{
+    color: #6e6b74;
+    margin: 10px 15px 10px 0px;
+   
+}
+.cont3 h3{
+    font-size: 32px;
+    color: #2d2640;
+    text-transform: capitalize;
+    margin: 24px 0 8px 0;
+}
+
+
+
+/* 4. Find out more  */
+
+.cont4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+    color:#ffffff;
+    background-color: #2d2640;
+    padding: 80px 60px;
+
+}
+
+.cont4 h3{
+    font-size: 44px;
+}
+
+/* Footer */
+footer{
+    
+    margin-top: 60px;
+}
+
+.last{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+
+}
+footer .last{
+    padding: 0;
+}
+
+
+.footer-content{
+    border-bottom: 1px solid #6e6b74;
+}
+footer h2{
+    font-size: 36px;
+}
+footer nav{
+    text-align: center;
+    padding: 24px 0;
+}
+footer a{
+    color: #6e6b74;
+    margin-left: 32px;
+    font-size: 24px;
+}
+
+.last a:hover{
+    color: #2d2640;
+}
+.copyright{
+    text-align: center;
+    background-color: #2d2640;
+    color: #cbc9c9;
+    font-size: 20px;
+    padding: 32px 0;
+}
