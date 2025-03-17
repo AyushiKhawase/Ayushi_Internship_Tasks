@@ -1,0 +1,401 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 15px 200px;
+  background-color: white;
+  background-color: aliceblue;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+}
+
+/* Logo Styling */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 3px;
+
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+.banner-section{
+  height: 550px;
+  width: 100%;
+  background: url(images/banner.jpg) no-repeat center center/cover;
+  /* background-image: linear-gradient(to top, #f62e71 0%, #f9ab72 100%); */
+  background-attachment: fixed;
+  position: relative;
+}
+
+.banner-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  /* padding: 15px 200px; */
+  padding-top: 200px;
+  padding-left: 500px;
+  padding-right: 200px;
+  gap: 50px;
+ 
+}
+
+.banner-content h1{
+  color: white;
+  font-size: 50px;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('images/banner.jpg') center/cover no-repeat; /* Add your background image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Gradient Overlay */
+.overlayss {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* background: linear-gradient(to bottom, rgba(255, 87, 87, 0.7), rgba(255, 87, 87, 0.5)); */
+  /* background:linear-gradient(to top, #f62e71 0%, #f9ab72 100%); */
+  background: linear-gradient(to top, rgba(246, 46, 113, 0.8) 0%, rgba(249, 171, 114, 0.6) 100%);
+
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+/* Button Styling */
+.hero-content button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: white;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero-content button:hover {
+  background: black;
+  color: white;
+}
+
+
+.facilities{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+/* Centering the title and description */
+.facilities-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.facilities-description {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 70px auto;
+}
+
+/* Layout for the images */
+.facilities-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Card styles */
+.card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px gray;
+ 
+}
+
+/* Image inside the card */
+.image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Applying background images */
+.image-url1 {
+  background-image: url("images/f1.jpg");
+}
+.image-url2 {
+  background-image: url("images/f2.jpg");
+}
+.image-url3 {
+  background-image: url("images/f3.jpg");
+}
+
+/* Hover overlay effect */
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  transition: bottom 0.3s ease-in-out;
+  background-image: linear-gradient(to top, rgba(246, 46, 113, 0.8) 0%, rgba(249, 171, 114, 0.6) 100%);
+}
+
+/* Hover effect */
+.card:hover .overlay {
+  bottom: 0;
+}
+
+
+
+
+
+.welcome-section {
+  display: flex;
+  height: 100vh;
+  color: white;
+  width: 100%;
+ 
+}
+
+.welcome-image {
+  flex: 1;
+}
+
+.welcome-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.welcome-text {
+  flex: 1;
+  background-color: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 50px;
+
+
+ 
+}
+
+.welcome-text h2 {
+  font-size: 2.5rem;
+  color: #ff758c;
+}
+
+.welcome-text h2 span {
+  color: white;
+}
+
+.welcome-text p {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.package-button {
+  margin-top: 30px;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.package-button:hover {
+  background-color: #ff758c;
+  border-color: #ff758c;
+  color: black;
+}
+
+
+/* Section Styling */
+.features-section {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.features-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features-description {
+  font-size: 16px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+/* Grid Layout */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual Features Card */
+.features-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.features-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.features-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.features-text {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.six-cards {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.six-cards-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.six-cards-description {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.six-cards-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.six-cards-item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.six-cards-item:hover {
+  transform: translateY(-5px);
+}
+
+.six-cards-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.six-cards-heading {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+
+.six-cards-text {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 15px 20px;
+}
