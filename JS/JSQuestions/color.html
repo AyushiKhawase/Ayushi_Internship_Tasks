@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sequential Background Color Change</title>
+  <style>
+    #main {
+      background-color: red; /* initial color */
+      padding: 50px;
+      text-align: center;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body id="main">
+  <h1>Change background color</h1>
+  <button onclick="changeColor()">Click to change color of background</button>
+
+  <script>
+    const colors = ["red", "blue", "green", "yellow", "orange", "pink"];
+    let currentIndex = 0;
+
+    function changeColor() {
+      let body = document.getElementById("main");
+
+      // Set the background color
+      body.style.backgroundColor = colors[currentIndex];
+
+      // Move to next color
+      currentIndex++;
+
+      // Loop back to start if at end
+      if (currentIndex >= colors.length) {
+        currentIndex = 0;
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Map Filter and Reduce</h1>
+    <script>
+const arr=[4,3,1,6,5,8];
+
+// function addition(array){
+//     let sum=0;
+// for(let i=0;i<array.length;i++){
+// sum+=array[i];
+// }
+// return sum;
+// }
+// console.log(addition(arr));
+
+//Reduce Method
+function addition(sum,curr){
+    console.log("Sum: ",sum);
+    console.log(curr);
+    sum+=curr;
+    return sum;
+
+}
+let output = arr.reduce(addition,0);
+console.log("Output:", output);
+
+    </script>
+</body>
+</html>
